@@ -1,10 +1,7 @@
 library(dashBootstrapComponents)
 library(dashHtmlComponents)
 
-popover_children <- list(
-  dbcPopoverHeader("Popover header"),
-  dbcPopoverBody("And here's some amazing content. Cool!")
-)
+popover_children <- "I am a popover!"
 
 popovers <- htmlDiv(
   list(
@@ -15,7 +12,6 @@ popovers <- htmlDiv(
     ),
     dbcPopover(
       popover_children,
-      id = "click",
       target = "click-target",
       trigger = "click"
     ),
@@ -26,7 +22,6 @@ popovers <- htmlDiv(
     ),
     dbcPopover(
       popover_children,
-      id = "focus",
       target = "focus-target",
       trigger = "focus"
     ),
@@ -37,7 +32,6 @@ popovers <- htmlDiv(
     ),
     dbcPopover(
       popover_children,
-      id = "hover",
       target = "hover-target",
       trigger = "hover",
     ),
@@ -47,7 +41,6 @@ popovers <- htmlDiv(
     ),
     dbcPopover(
       popover_children,
-      id = "legacy",
       target = "legacy-target",
       trigger = "legacy"
     )
