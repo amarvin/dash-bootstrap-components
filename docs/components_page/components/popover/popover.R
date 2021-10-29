@@ -13,6 +13,7 @@ popovers <- htmlDiv(
     dbcPopover(
       popover_children,
       target = "click-target",
+      body = TRUE,
       trigger = "click"
     ),
     dbcButton(
@@ -23,6 +24,7 @@ popovers <- htmlDiv(
     dbcPopover(
       popover_children,
       target = "focus-target",
+      body = TRUE,
       trigger = "focus"
     ),
     dbcButton(
@@ -33,7 +35,8 @@ popovers <- htmlDiv(
     dbcPopover(
       popover_children,
       target = "hover-target",
-      trigger = "hover",
+      body = TRUE,
+      trigger = "hover"
     ),
     dbcButton("Legacy",
       id = "legacy-target", n_clicks = 0,
@@ -42,6 +45,7 @@ popovers <- htmlDiv(
     dbcPopover(
       popover_children,
       target = "legacy-target",
+      body = TRUE,
       trigger = "legacy"
     )
   )
